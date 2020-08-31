@@ -15,7 +15,7 @@ automatically.
 
 # Example:
 
-import math
+import math 
 
 def dist(a, b):
     """Compute the distance between two x,y points."""
@@ -35,10 +35,14 @@ print("Distance is: {:.2f}".format(dist(a, b)))
 # Write a function `print_tuple` that prints all the values in a tuple
 
 # YOUR CODE HERE
+def print_tuple(a):
+    for val in a:
+        print(val)
 
 t = (1, 2, 5, 7, 99)
 print_tuple(t)  # Prints 1 2 5 7 99, one per line
 
 # Declare a tuple of 1 element then print it
-u = (1)  # What needs to be added to make this work?
+u = (1,)  # What needs to be added to make this work? 
+# To write a tuple containing a single value you have to include a comma, even though there is only one value
 print_tuple(u)
